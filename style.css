@@ -1,0 +1,206 @@
+/*
+Theme Name: Jane Doe
+Author: Jason Manivant
+Description: Ceci est un thème réalisé dans le cadre d'une formation
+Text Domain: janedoe
+*/
+
+@font-face {
+    font-family: 'satisfyregular';
+    src: url('fonts/satisfy-regular-webfont.woff2') format('woff2'),
+         url('fonts/satisfy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'great_vibesregular';
+    src: url('fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+         url('fonts/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quattrocentoregular';
+    src: url('fonts/quattrocento-regular-webfont.woff2') format('woff2'),
+         url('fonts/quattrocento-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latohairline';
+    src: url('fonts/lato-thin-webfont.woff2') format('woff2'),
+         url('fonts/lato-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**********************************************************************************
+GLOBAL
+**********************************************************************************/
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 65.5%;
+    --primary-color: rgb(204, 164, 61);
+    background-color: rgb(255, 240, 243);
+}
+body{
+    font-family: 'latoregular', sans-serif;
+    font-size: 2rem;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+iframe{
+    display: block;
+    max-width: 100%;
+}
+nav ul, .social-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'quattrocentoregular', sans-serif;
+    font-size: 2.3rem;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all .5s ease;
+}
+a:hover{
+    opacity: .4;
+}
+p{
+    font-family: 'latohairline', sans-serif;
+    font-weight: 800;
+}
+
+/**********************************************************************************
+STRUCTURE
+**********************************************************************************/
+
+.container{
+    min-height: 25px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/**********************************************************************************
+ENTETE
+**********************************************************************************/
+
+.site-header{
+    background-color: #fff;
+}
+.site-header > .container{
+    align-items: center;
+}
+.site-title, .nav, .footer2, .aside1, .aside2{
+    min-height: 25px;
+    width: 50%;
+}
+.footer1{
+    min-height: 25px;
+    width: 35%;
+    align-items: center;
+}
+.site-title a{
+    font-family: 'great_vibesregular';
+    font-size: 3.5rem;
+}
+.site-title a:hover{
+    opacity: 1;
+}
+.description{
+    font-family: 'satisfyregular'; /* span description */
+}
+.site-title > span{
+    display: block;
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav li{
+    margin-left: 2rem;
+}
+h1{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(9deg, rgba(255,255,255,1) 0%, rgba(187,161,79,1) 100%);
+}
+
+/**********************************************************************************
+CONTENT
+**********************************************************************************/
+
+.attachment-archive{
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, .5);
+}
+.comment-form-comment{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.current-menu-item a{
+    color: rgb(241, 53, 201);
+}
+nav{
+    background: white;
+}
+.wp-block-separator{
+    margin: 10rem 0;
+}
+
+/**********************************************************************************
+FOOTER
+**********************************************************************************/
+
+.site-footer{
+    background-color: #fff;
+}
+.footer-nav li{
+    margin-right: 2rem;
+}
+.social-nav li{
+    margin-right: 2rem;
+}
+.menu{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
